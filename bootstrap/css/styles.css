@@ -28,3 +28,56 @@
 .margin-bottom{
 	margin-bottom: 5rem;
 }
+
+/* Timeline Tree Shapes */
+
+.tree-straight{
+	position:relative;
+	background-color:white;
+	max-height:400px;
+	
+}
+
+.tree-straight::before, .tree-empty::before{
+	
+	content:" ";
+	position:absolute;
+	top:0;
+	left:47%;
+	width: 20px;
+	height:100%;
+	max-height:400px;
+	background-color:black;
+	
+
+
+}
+
+.tree-node::after{
+
+	content: " ";
+	position: absolute;
+    width: 4em;
+    height: 4em;   
+    border-radius: 100%;
+    left: 42.5%;
+    top: 128px;
+    background-color: red;
+}
+
+.tree-empty{
+	height:12rem;
+}
+
+footer{
+
+	height:10rem;
+	width:100%;
+	background-color:white;
+}
+
+@media(max-width:992px){
+	.tree-straight, .tree-empty{
+		display:none;
+	}
+}
