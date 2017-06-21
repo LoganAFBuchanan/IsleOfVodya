@@ -1,0 +1,11 @@
+.navbar{
+	margin-bottom:0;
+	padding-top:.5em;
+	padding-bottom:.5em;
+
+}
+
+.nav-justified>li {
+    float: left; 
+    width: 32.5%;
+}
