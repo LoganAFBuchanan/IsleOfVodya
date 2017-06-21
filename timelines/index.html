@@ -50,14 +50,153 @@
           
         </div>
       </div>
+      <div class="container">
 
-      
-      <footer>
+        <div>
 
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="../bootstrap/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation" ><a id="surrey-tab" href="#surrey" aria-controls="surrey" role="tab" data-toggle="tab">Surrey Timeline</a></li>
+            <li role="presentation"><a id="nvan-tab" href="#nvan" aria-controls="nvan" role="tab" data-toggle="tab">North Van Timeline</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+
+<!--
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SURREY TIMELINE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<div role="tabpanel" class="tab-pane fade in" id="surrey">
+  <div class="row">
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+</div>
+
+<!--
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+NORTH VAN TIMELINE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<div role="tabpanel" class="tab-pane fade" id="nvan">
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<footer>
+
+</footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+  function recalc(){
+    $(".tree-straight").each(function (i) {
+      $(this).height($(this).parent().css("height"));
+    });
+  }
+
+  
+
+  $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+    recalc();
+  })
+
+
+  $( document ).ready(function() {
+
+    recalc();
+    $( window ).resize(function() {
+      recalc();
+    });
+
+    console.log( "ready!" );
+  });
+
+</script>
+</body>
+</html>
