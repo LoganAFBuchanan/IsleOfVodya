@@ -81,3 +81,9 @@ footer{
 		display:none;
 	}
 }
+
+@media(max-width:768px){
+	.col-sm-8{
+		text-align:center;
+	}
+}
