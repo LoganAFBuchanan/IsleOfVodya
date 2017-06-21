@@ -9,3 +9,22 @@
     float: left; 
     width: 32.5%;
 }
+
+.card-icons{
+	font-size:7.14em;
+	margin-top:3rem;
+}
+
+.thumbnail-cards{
+	max-width: 20.357em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-top{
+	margin-top: 5rem;
+}
+
+.margin-bottom{
+	margin-bottom: 5rem;
+}
