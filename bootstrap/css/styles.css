@@ -2,6 +2,10 @@ a,p,h1,h2,h3,h4{
 	color:#F2E5D7;
 }
 
+a:hover{
+	color:#F2E5D7;
+	
+}
 
 body{
 	padding-top:50px;
@@ -122,6 +126,22 @@ body{
 	margin-bottom: 5rem;
 }
 
+.tab-pane{
+	margin-top:.7em;
+}
+
+.tab-pane .row{
+	margin-right:0;
+	margin-left:0;
+}
+
+.col-md-6 {
+    
+    padding: 2em;
+    margin: 0.7em;
+    background-color: #63372C;
+}
+
 /* Timeline Tree Shapes */
 
 .tree-straight{
@@ -184,6 +204,12 @@ footer{
 	height:10rem;
 	width:100%;
 	
+}
+
+@media(min-width:991px){
+	.col-md-6{
+		width: 47.7%;
+	}
 }
 
 @media(max-width:1200px){
