@@ -202,7 +202,7 @@ TIMELINE TREE STYLES
 	width: 20px;
 	height:100%;
 	max-height:400px;
-	background-color:black;
+	background-color:#4B4948;
 
 
 
@@ -220,7 +220,7 @@ TIMELINE TREE STYLES
     border-radius: 100%;
     left: 42.4%;
     top: 128px;
-    background-color: black;
+    background-color: #4B4948;
     -webkit-filter: drop-shadow(0px 0px 10px rgba(174,0,0,0));
     filter        : drop-shadow(0px 0px 10px rgba(174,0,0,0));
     -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#ae0000	')";
@@ -235,6 +235,20 @@ TIMELINE TREE STYLES
     filter        : drop-shadow(0px 0px 15px rgba(174,0,0,1));
     -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=15, Color='#ae0000	')";
     filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=15, Color='#ae0000	')";
+}
+
+blockquote{
+	transition:all .5s;
+	padding-top:0;
+}
+
+blockquote h3{
+	margin-top:0;
+}
+
+.block-hover{
+	border-left-color: #c70000;
+	transition:all .5s;
 }
 
 .tree-empty{

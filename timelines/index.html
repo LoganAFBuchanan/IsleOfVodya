@@ -15,6 +15,7 @@
   <!-- Overriding CSS -->
   <link href="../bootstrap/css/styles.css" rel="stylesheet">
 
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +39,7 @@
               <li><a href="../world/index.html"><i class="material-icons">public</i></a></li>
               <li><a href="../timelines/index.html"><i class="material-icons">device_hub</i></a></li>
             </ul>
-            
+
           </div><!-- /.navbar -->
         </div><!-- /.container -->
       </nav>
@@ -47,7 +48,7 @@
         <div class="text-center container">
           <h1>Timelines</h1>
           <p>A description of a position adjacent to a location</p>
-          
+
         </div>
       </div>
       <div class="container">
@@ -150,7 +151,78 @@ NORTH VAN TIMELINE
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 <div role="tabpanel" class="tab-pane fade" id="nvan">
-
+  <div class="row">
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-empty col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <blockquote>
+        <h3>Event Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae convallis leo, at molestie magna. Fusce a massa diam. Phasellus est est, accumsan at lacus sit amet, imperdiet cursus urna. Vivamus ornare neque neque, non rutrum erat finibus eget. Etiam at pretium augue. Fusce quis commodo lorem.</p>
+      </blockquote>
+    </div>
+    <div class="tree-straight tree-node col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
 
 </div>
 
@@ -173,30 +245,6 @@ NORTH VAN TIMELINE
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
-<script>
-  function recalc(){
-    $(".tree-straight").each(function (i) {
-      $(this).height($(this).parent().css("height"));
-    });
-  }
-
-  
-
-  $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
-    recalc();
-  })
-
-
-  $( document ).ready(function() {
-
-    recalc();
-    $( window ).resize(function() {
-      recalc();
-    });
-
-    console.log( "ready!" );
-  });
-
-</script>
+<script src="timelinesscript.js"></script>
 </body>
 </html>
