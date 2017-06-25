@@ -113,6 +113,7 @@ CARD STYLES
 }
 
 .thumbnail-cards{
+	padding:0px;
 	border:0;
 	border-radius:0;
 	background-color:#63372C;
@@ -120,6 +121,26 @@ CARD STYLES
     margin-left: auto;
     margin-right: auto;
 }
+
+.thumbnail .caption{
+	padding:0px;
+}
+
+.thumbnail .caption  p{
+	padding:6px;
+}
+
+.thumbnail p.button-container{
+	margin:0px;
+	padding:0;
+}
+
+.button-container a{
+	width:100%;
+	min-height: 3em;
+	line-height: 3em;
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 BUTTON STYLES
@@ -138,7 +159,11 @@ BUTTON STYLES
 .btn-primary:hover{
 	background-color:#262322;
 	color:#C97D60;
-	border:0;
+	border-color:#63372C;
+	border-style: solid;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
 	transition:all .3s;
 }
 
@@ -293,6 +318,11 @@ MEDIA QUERIED STYLES
 @media(max-width:768px){
 	.col-sm-8{
 		text-align:center;
+	}
+
+	.thumbnail-cards{
+		max-width:100%;
+		width:100%;
 	}
 
 	.jumbotron{
