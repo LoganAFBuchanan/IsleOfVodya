@@ -1,2 +1,2 @@
-# IsleOfVodya
-The website for my 5th Edition D&amp;D Campaign
+# The Isle Of Vodya
+A web companion for the two Dungeons & Dragons campaigns being run by me
