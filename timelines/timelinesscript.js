@@ -20,7 +20,7 @@ $( document ).ready(function() {
     recalc();
   });
 
-  $(".tree-node").hover(
+  $(".tree-node, .tree-begin").hover(
   function() {
     $( this ).prev("div").children("blockquote").addClass("block-hover");
     $( this ).next("div").children("blockquote").addClass("block-hover");
@@ -28,7 +28,8 @@ $( document ).ready(function() {
     $( this ).prev("div").children("blockquote").removeClass("block-hover");
     $( this ).next("div").children("blockquote").removeClass("block-hover");
   }
+
 );
 
-  
+
 });

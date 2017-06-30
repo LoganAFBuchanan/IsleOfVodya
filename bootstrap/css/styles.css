@@ -142,7 +142,7 @@ CARD STYLES
 	border:0;
 	border-radius:0;
 	background-color:#63372C;
-	max-width: 20.357em;
+	
     margin-left: auto;
     margin-right: auto;
 }
@@ -219,7 +219,7 @@ PLAYER CARD STYLES
 .player-image{
 	max-height:200px;
 	margin-top:1.5em
-	
+
 }
 
 .col-md-6 {
@@ -242,7 +242,7 @@ TIMELINE TREE STYLES
 .tree-straight{
 	position:relative;
 	background-color:;
-	max-height:400px;
+	min-height:400px;
 
 }
 
@@ -256,11 +256,6 @@ TIMELINE TREE STYLES
 	height:100%;
 	max-height:400px;
 	background-color:#4B4948;
-
-
-
-
-
 
 }
 
@@ -281,7 +276,25 @@ TIMELINE TREE STYLES
 
     transition:all .5s;
 }
-.tree-node:hover.tree-node::after{
+
+.tree-begin::after{
+	content: " ";
+	position: absolute;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    left: 42.4%;
+    top: 370px;
+    background-color: #4B4948;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(174,0,0,0));
+    filter        : drop-shadow(0px 0px 10px rgba(174,0,0,0));
+    -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#ae0000	')";
+    filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#ae0000	')";
+
+    transition:all .5s;
+}
+
+.tree-node:hover.tree-node::after, .tree-begin:hover.tree-begin::after{
 	background:#c70000;
 	transition:all .5s;
 	-webkit-filter: drop-shadow(0px 0px 15px rgba(174,0,0,1));
