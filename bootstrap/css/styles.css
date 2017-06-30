@@ -218,6 +218,8 @@ PLAYER CARD STYLES
 
 .player-image{
 	max-height:200px;
+	margin-top:1.5em
+	
 }
 
 .col-md-6 {
@@ -225,6 +227,7 @@ PLAYER CARD STYLES
     padding: 2em;
     margin: 0.7em;
     background-color: #63372C;
+		min-height:240px;
 }
 
 .characterPane{
