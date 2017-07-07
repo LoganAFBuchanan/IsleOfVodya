@@ -52,9 +52,9 @@ win.scroll(function(event) {
   allMods.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("slide-up");
+      el.addClass("slide-left");
     }else{
-      el.removeClass("slide-up");
+      el.removeClass("slide-left");
     }
   });
 });
