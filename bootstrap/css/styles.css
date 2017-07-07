@@ -137,14 +137,33 @@ CARD STYLES
 	margin-top:3rem;
 }
 
-.thumbnail-cards{
+.col-sm-4 .thumbnail-cards{
 	padding:0px;
 	border:0;
 	border-radius:0;
 	background-color:#63372C;
-	
+
     margin-left: auto;
     margin-right: auto;
+
+		-webkit-animation: slide-up 1s;
+	  -moz-animation:    slide-up 1s;
+	  -o-animation:      slide-up 1s;
+	  animation:         slide-up 1s;
+}
+
+.col-sm-4:nth-child(2) .thumbnail-cards{
+	-webkit-animation: slide-up 1.5s;
+	-moz-animation:    slide-up 1.5s;
+	-o-animation:      slide-up 1.5s;
+	animation:         slide-up 1.5s;
+}
+
+.col-sm-4:nth-child(3) .thumbnail-cards{
+	-webkit-animation: slide-up 2s;
+	-moz-animation:    slide-up 2s;
+	-o-animation:      slide-up 2s;
+	animation:         slide-up 2s;
 }
 
 .thumbnail .caption{
@@ -228,10 +247,83 @@ PLAYER CARD STYLES
     margin: 0.7em;
     background-color: #63372C;
 		min-height:240px;
+
+		-webkit-animation: slide-up 1s;
+	  -moz-animation:    slide-up 1s;
+	  -o-animation:      slide-up 1s;
+	  animation:         slide-up 1s;
+}
+
+.tab-pane .col-md-6:nth-child(2){
+	-webkit-animation: slide-up 1.5s;
+	-moz-animation:    slide-up 1.5s;
+	-o-animation:      slide-up 1.5s;
+	animation:         slide-up 1.5s;
 }
 
 .characterPane{
 		background-color:#4B4948;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CARD ANIMATIONS
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+
+
+.slide-up{
+	-webkit-animation: slide-up 1.5s;
+	-moz-animation:    slide-up 1.5s;
+	-o-animation:      slide-up 1.5s;
+	animation:         slide-up 1.5s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@-webkit-keyframes slide-up {
+  0%   {
+		opacity: 0;
+		transform:translateY(2em);
+	}
+  100% {
+		opacity: 1;
+		transform:translateY(0em);
+	}
+}
+@-moz-keyframes slide-up {
+	0%   {
+		opacity: 0;
+		transform:translateY(2em);
+	}
+  100% {
+		opacity: 1;
+		transform:translateY(0em);
+	}
+}
+@-o-keyframes slide-up {
+	0%   {
+		opacity: 0;
+		transform:translateY(2em);
+	}
+  100% {
+		opacity: 1;
+		transform:translateY(0em);
+	}
+}
+@keyframes slide-up {
+	0%   {
+		opacity: 0;
+		transform:translateY(2em);
+	}
+  100% {
+		opacity: 1;
+		transform:translateY(0em);
+	}
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
