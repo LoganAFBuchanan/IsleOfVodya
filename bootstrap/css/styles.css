@@ -353,6 +353,10 @@ TIMELINE TREE STYLES
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 
+.session-text{
+	padding:2em;
+}
+
 .tree-straight{
 	position:relative;
 	background-color:;
@@ -408,7 +412,24 @@ TIMELINE TREE STYLES
     transition:all .5s;
 }
 
-.tree-node:hover.tree-node::after, .tree-begin:hover.tree-begin::after{
+.tree-end::after{
+	content: " ";
+	position: absolute;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    left: 42.4%;
+    bottom:-1em;
+    background-color: #4B4948;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(174,0,0,0));
+    filter        : drop-shadow(0px 0px 10px rgba(174,0,0,0));
+    -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#ae0000	')";
+    filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#ae0000	')";
+
+    transition:all .5s;
+}
+
+.tree-node:hover.tree-node::after, .tree-begin:hover.tree-begin::after, .tree-end:hover.tree-end::after{
 	background:#c70000;
 	transition:all .5s;
 	-webkit-filter: drop-shadow(0px 0px 15px rgba(174,0,0,1));

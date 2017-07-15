@@ -54,7 +54,7 @@ win.scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("slide-left");
     }else{
-      el.removeClass("slide-left");
+      
     }
   });
 });
