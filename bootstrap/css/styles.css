@@ -120,6 +120,7 @@ NAVIGATION STYLES
     left: 0;
     right: 0;
     text-align: center;
+    z-index:1000000000000;
 }
 
 .session-list li{
