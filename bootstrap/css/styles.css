@@ -111,6 +111,23 @@ NAVIGATION STYLES
 	-webkit-tap-highlight-color:#63372C;
 }
 
+.session-list{
+	list-style-type: none;
+    position: fixed;
+    top: 50px;
+    background: currentColor;
+    padding-left: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.session-list li{
+	display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 JUMBOTRON STYLES
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
