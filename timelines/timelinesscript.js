@@ -81,7 +81,7 @@ $( document ).ready(function() {
     recalc();
   });
 
-  $(".tree-node, .tree-begin").hover(
+  $(".tree-node, .tree-begin, .tree-end").hover(
   function() {
     $( this ).prev("div").children("blockquote").addClass("block-hover");
     $( this ).next("div").children("blockquote").addClass("block-hover");
