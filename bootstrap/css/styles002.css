@@ -7,6 +7,23 @@ This is the overide file for bootstrap css
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Raleway');
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SCROLLBAR STYLES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+body::-webkit-scrollbar, .session-list::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track, .session-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb, .session-list::-webkit-scrollbar-thumb {
+  background-color: #63372C;
+  outline: 1px solid slategrey;
+}
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 OVERARCHING STYLES
@@ -121,6 +138,10 @@ NAVIGATION STYLES
     right: 0;
     text-align: center;
     z-index:1000000000000;
+	max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+	
 }
 
 .session-list li{
@@ -319,10 +340,10 @@ CARD ANIMATIONS
 
 
 .slide-left{
-	-webkit-animation: slide-left 1.5s;
-	-moz-animation:    slide-left 1.5s;
-	-o-animation:      slide-left 1.5s;
-	animation:         slide-left 1.5s;
+	-webkit-animation: slide-left 0.3s;
+	-moz-animation:    slide-left 0.3s;
+	-o-animation:      slide-left 0.3s;
+	animation:         slide-left 0.3s;
 }
 
 .already-visible {
@@ -545,6 +566,8 @@ MEDIA QUERIED STYLES
 		float:left;
 		width:50%;
 	}
+
+	
 
 }
 
