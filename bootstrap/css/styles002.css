@@ -262,7 +262,11 @@ BUTTON STYLES
 	min-width:8em;
 	background-color:#C97D60;
 	color:#262322;
-	border:0;
+	border-color: #C97D60;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
 	transition:all .3s;
 }
 
