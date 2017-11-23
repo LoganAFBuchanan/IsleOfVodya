@@ -342,40 +342,12 @@ CARD ANIMATIONS
 
 
 
-
-.slide-left{
-	-webkit-animation: slide-left 0.3s;
-	-moz-animation:    slide-left 0.3s;
-	-o-animation:      slide-left 0.3s;
-	animation:         slide-left 0.3s;
-}
-
 .already-visible {
   transform: translateY(0);
   animation: none;
 }
 
-@-webkit-keyframes slide-left{
-	0%   {
-		opacity: 0;
-		transform:translateX(2em);
-	}
-  100% {
-		opacity: 1;
-		transform:translateX(0em);
-	}
-}
 
-@keyframes slide-left{
-	0%   {
-		opacity: 0;
-		transform:translateX(2em);
-	}
-  100% {
-		opacity: 1;
-		transform:translateX(0em);
-	}
-}
 
 @-webkit-keyframes slide-up {
   0%   {
